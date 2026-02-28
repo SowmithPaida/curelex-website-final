@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curelex HealthTech – Smart Digital Healthcare Infrastructure connecting patients and doctors through secure technology." />
+  <title>Curelex HealthTech | Reimagining Healthcare Through Innovative Medical Technology</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Curelex HealthTech Home">
+        <img src="https://i.postimg.cc/4Nf0QCMv/curelex-logo.jpg" alt="Curelex HealthTech Logo" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#home"         class="nav-link active">Home</a>
+        <a href="#about"        class="nav-link">About</a>
+        <a href="#services"     class="nav-link">Services</a>
+        <a href="#supported-by" class="nav-link">Supported By</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <nav>
+        <a href="#home"         class="mobile-link">Home</a>
+        <a href="#about"        class="mobile-link">About</a>
+        <a href="#services"     class="mobile-link">Services</a>
+        <a href="#supported-by" class="mobile-link">Supported By</a>
+        <a href="#contact"      class="mobile-link">Contact</a>
+        <a href="#contact"      class="btn btn-primary mobile-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <!-- Decorative shapes -->
+    <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
+    <div class="container hero-content reveal">
+      <span class="hero-badge">🏥 Healthcare Technology</span>
+      <h1 class="hero-heading">
+        Healthcare<br />
+        <span class="gradient-text">Reimagined</span> 
+      </h1>
+      <p class="hero-subheading">
+        Advanced solutions for safe <br class="br-desktop" /> more comfortable patient care.
+      </p>
+      <div class="hero-actions">
+        <a href="#about"   class="btn btn-primary btn-lg ripple">Learn More</a>
+        <a href="#contact" class="btn btn-outline btn-lg">Contact Us</a>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Incubation Partners</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Secure &amp; Encrypted</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Digital Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image / Illustration placeholder -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-float hero-card-float--1">
+        <span class="float-icon">💊</span>
+        <div>
+          <strong>Prescription Ready</strong>
+          <small>Digitally signed &amp; verified</small>
+        </div>
+      </div>
+      <div class="hero-card-float hero-card-float--2">
+        <span class="float-icon">🔒</span>
+        <div>
+          <strong>Secured Records</strong>
+          <small>End-to-end encrypted</small>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <svg viewBox="0 0 400 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Hospital building simplified illustration -->
+          <rect x="80" y="120" width="240" height="180" rx="12" fill="#EAF2FF" stroke="#2B7AFA" stroke-width="2"/>
+          <rect x="160" y="200" width="80" height="100" rx="8" fill="#2B7AFA" opacity="0.2"/>
+          <rect x="175" y="215" width="20" height="20" rx="4" fill="#2B7AFA"/>
+          <rect x="205" y="215" width="20" height="20" rx="4" fill="#2B7AFA"/>
+          <rect x="175" y="245" width="20" height="20" rx="4" fill="#2B7AFA"/>
+          <rect x="205" y="245" width="20" height="20" rx="4" fill="#2B7AFA"/>
+          <!-- Cross -->
+          <rect x="185" y="140" width="30" height="10" rx="5" fill="#2B7AFA"/>
+          <rect x="195" y="130" width="10" height="30" rx="5" fill="#2B7AFA"/>
+          <!-- Windows -->
+          <rect x="100" y="150" width="40" height="30" rx="6" fill="white" stroke="#2B7AFA" stroke-width="1.5"/>
+          <rect x="260" y="150" width="40" height="30" rx="6" fill="white" stroke="#2B7AFA" stroke-width="1.5"/>
+          <rect x="100" y="195" width="40" height="30" rx="6" fill="white" stroke="#2B7AFA" stroke-width="1.5"/>
+          <rect x="260" y="195" width="40" height="30" rx="6" fill="white" stroke="#2B7AFA" stroke-width="1.5"/>
+          <!-- Ground line -->
+          <line x1="40" y1="300" x2="360" y2="300" stroke="#CBD8EA" stroke-width="2"/>
+          <!-- Trees -->
+          <circle cx="55" cy="285" r="18" fill="#4ECDC4" opacity="0.6"/>
+          <rect x="51" y="295" width="8" height="15" rx="2" fill="#4ECDC4" opacity="0.4"/>
+          <circle cx="345" cy="285" r="18" fill="#4ECDC4" opacity="0.6"/>
+          <rect x="341" y="295" width="8" height="15" rx="2" fill="#4ECDC4" opacity="0.4"/>
+          <!-- Pulse line -->
+          <polyline points="40,60 80,60 95,30 115,90 135,50 155,70 175,70 195,40 215,80 235,60 280,60 320,60 360,60"
+                    stroke="#2B7AFA" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="section about" id="about" aria-label="About Curelex">
+    <div class="container">
+      <div class="section-tag reveal">About Us</div>
+      <div class="about-grid">
+
+        <!-- Text Column -->
+        <div class="about-text reveal">
+          <h2 class="section-heading">Innovating<br /><span class="gradient-text">Painless Healthcare</span></h2>
+          <p class="about-intro">
+            Curelex HealthTech is a deep-tech healthcare startup focused on transforming patient care through breakthrough drug delivery systems that eliminate needle pain and anxiety. Born from biomedical research and innovation, Curelex's technology delivers safer, gentler, and more precise medical treatments for patients across age groups.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-mini-card">
+              <div class="mini-card-icon" aria-hidden="true">💉</div>
+              <div>
+                <h3>Pioneering Painless Injection Technology</h3>
+                <p>Developing breakthrough drug delivery systems that eliminate needle pain and anxiety for patients of all age groups.</p>
+              </div>
+            </div>
+            <div class="about-mini-card">
+              <div class="mini-card-icon" aria-hidden="true">🔬</div>
+              <div>
+                <h3>Born From Research</h3>
+                <p>Our technology is rooted in rigorous biomedical research conducted at top laboratories and academic institutions across India.</p>
+              </div>
+            </div>
+            <div class="about-mini-card">
+              <div class="mini-card-icon" aria-hidden="true">🏥</div>
+              <div>
+                <h3>Safe &amp; Accessible Innovation</h3>
+                <p>Committed to improving patient comfort and clinical outcomes while making healthcare innovation accessible to everyone.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-tagline">
+            <span>✨</span> Making Healthcare Comfortable &amp; Accessible
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="about-visual reveal">
+          <div class="about-image-wrap">
+            <div class="about-img-placeholder">
+              <svg viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Phone frame -->
+                <rect x="70" y="20" width="200" height="380" rx="28" fill="#1A2340" stroke="#2B7AFA" stroke-width="2"/>
+                <rect x="82" y="50" width="176" height="310" rx="12" fill="#EAF2FF"/>
+                <!-- App UI inside phone -->
+                <rect x="94" y="62" width="152" height="40" rx="8" fill="#2B7AFA" opacity="0.15"/>
+                <text x="170" y="87" text-anchor="middle" font-family="Poppins,sans-serif" font-size="11" fill="#2B7AFA" font-weight="600">Patient Dashboard</text>
+                <!-- Profile row -->
+                <circle cx="108" cy="126" r="16" fill="#2B7AFA" opacity="0.3"/>
+                <rect x="130" y="116" width="80" height="8" rx="4" fill="#2B7AFA" opacity="0.4"/>
+                <rect x="130" y="130" width="55" height="6" rx="3" fill="#A0BFEA"/>
+                <!-- Cards -->
+                <rect x="94" y="154" width="68" height="60" rx="10" fill="white" stroke="#DDEEFF" stroke-width="1.5"/>
+                <text x="128" y="179" text-anchor="middle" font-family="sans-serif" font-size="18">💊</text>
+                <text x="128" y="200" text-anchor="middle" font-family="Poppins,sans-serif" font-size="8" fill="#666">Prescription</text>
+                <rect x="172" y="154" width="68" height="60" rx="10" fill="white" stroke="#DDEEFF" stroke-width="1.5"/>
+                <text x="206" y="179" text-anchor="middle" font-family="sans-serif" font-size="18">🩺</text>
+                <text x="206" y="200" text-anchor="middle" font-family="Poppins,sans-serif" font-size="8" fill="#666">Doctor</text>
+                <!-- Record list -->
+                <rect x="94" y="228" width="152" height="10" rx="5" fill="#2B7AFA" opacity="0.15"/>
+                <rect x="94" y="245" width="120" height="8" rx="4" fill="#A0BFEA" opacity="0.6"/>
+                <rect x="94" y="260" width="140" height="8" rx="4" fill="#A0BFEA" opacity="0.5"/>
+                <rect x="94" y="275" width="100" height="8" rx="4" fill="#A0BFEA" opacity="0.4"/>
+                <!-- Follow-up button -->
+                <rect x="94" y="300" width="152" height="32" rx="10" fill="#2B7AFA"/>
+                <text x="170" y="321" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" fill="white" font-weight="600">Schedule Follow-Up</text>
+                <!-- Home indicator -->
+                <rect x="145" y="374" width="50" height="5" rx="3" fill="#2B7AFA" opacity="0.4"/>
+              </svg>
+            </div>
+            <!-- Floating badges -->
+            <div class="about-badge about-badge--1">
+              <span>✅</span> Verified Doctors
+            </div>
+            <div class="about-badge about-badge--2">
+              <span>🔐</span> HIPAA-aligned
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="section services" id="services" aria-label="Our Services">
+    <div class="container">
+      <div class="section-tag reveal">What We Do</div>
+      <h2 class="section-heading text-center reveal">Core <span class="gradient-text">Services</span></h2>
+      <p class="section-subheading text-center reveal">Purpose-built tools for the modern healthcare ecosystem</p>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#EAF2FF"/>
+              <path d="M18 8c-1.5 0-3 .8-3.8 2.1C12.5 11.5 12 13.2 12 15c0 3.3 2.7 6 6 6s6-2.7 6-6c0-1.8-.5-3.5-2.2-4.9C21 8.8 19.5 8 18 8z" stroke="#2B7AFA" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="18" y1="21" x2="18" y2="28" stroke="#2B7AFA" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="14" y1="28" x2="22" y2="28" stroke="#2B7AFA" stroke-width="1.8" stroke-linecap="round"/>
+              <polyline points="15,14 17,16.5 21,12" stroke="#2B7AFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Medical Technology Innovation</h3>
+          <p>Developing advanced solutions to improve patient experience and treatment delivery — making procedures safer, gentler, and more effective for patients of all ages.</p>
+          <div class="service-chip">Deep Tech</div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#E8F9F7"/>
+              <circle cx="18" cy="14" r="5" stroke="#0EA5A0" stroke-width="1.8"/>
+              <circle cx="10" cy="24" r="3.5" stroke="#0EA5A0" stroke-width="1.8"/>
+              <circle cx="26" cy="24" r="3.5" stroke="#0EA5A0" stroke-width="1.8"/>
+              <line x1="13" y1="18" x2="10" y2="20.5" stroke="#0EA5A0" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="23" y1="18" x2="26" y2="20.5" stroke="#0EA5A0" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Research &amp; Development</h3>
+          <p>Collaborating with premier institutions and research labs to create next-generation healthcare solutions rooted in rigorous biomedical science and evidence-based innovation.</p>
+          <div class="service-chip" style="--chip-color: #0EA5A0; --chip-bg: #E8F9F7;">Lab-Backed</div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#FFF3E8"/>
+              <rect x="7" y="14" width="10" height="14" rx="3" stroke="#F97316" stroke-width="1.8"/>
+              <rect x="19" y="10" width="10" height="18" rx="3" stroke="#F97316" stroke-width="1.8"/>
+              <line x1="12" y1="8" x2="12" y2="14" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+              <line x1="24" y1="6" x2="24" y2="10" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+              <line x1="12" y1="6" x2="24" y2="6" stroke="#F97316" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Institutional Partnerships</h3>
+          <p>Working alongside leading universities and incubation centres to accelerate innovation, gain mentorship, and build a strong foundation for scalable healthcare breakthroughs.</p>
+          <div class="service-chip" style="--chip-color: #F97316; --chip-bg: #FFF3E8;">Incubated</div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#F3EEFF"/>
+              <circle cx="18" cy="15" r="6" stroke="#8B5CF6" stroke-width="1.8"/>
+              <path d="M8 30c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M15 14.5c.5-1 1.5-1.5 3-1.5" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="18" cy="15" r="1.5" fill="#8B5CF6"/>
+            </svg>
+          </div>
+          <h3>Patient-Centered Solutions</h3>
+          <p>Designing every technology with the patient at the core — prioritising safety, comfort, and efficiency so that every individual receives the best possible care experience.</p>
+          <div class="service-chip" style="--chip-color: #8B5CF6; --chip-bg: #F3EEFF;">Human-First</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SUPPORTED BY SECTION
+  ============================================================ -->
+  <section class="section supported-by" id="supported-by" aria-label="Supported By">
+    <div class="container">
+      <div class="section-tag reveal">Backed By The Best</div>
+      <h2 class="section-heading text-center reveal">Supported <span class="gradient-text">By</span></h2>
+      <p class="section-subheading text-center reveal">Recognised and incubated by premier academic and startup institutions</p>
+
+      <div class="supporters-grid">
+
+        <div class="supporter-card reveal">
+  <div class="supporter-logo-wrap">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/2/2e/Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png"
+      alt="Indian Institute of Information Technology, Allahabad Logo"
+      loading="lazy"
+    />
+  </div>
+  <h3>IIIT Allahabad</h3>
+  <p>Indian Institute of Information Technology, Allahabad</p>
+</div>
+
+        <div class="supporter-card reveal">
+  <div class="supporter-logo-wrap">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ01T1m_N3nApfSH4YQgqv3v4yYxW4zUUb7w&s"
+      alt="United University – Startup and Incubation Cell Logo"
+      loading="lazy"
+    />
+  </div>
+  <h3>United University</h3>
+  <p>Startup &amp; Incubation Cell</p>
+</div>
+
+       <div class="supporter-card reveal">
+  <div class="supporter-logo-wrap">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHhplBqofJH7D-GWrFN-y-GYRKs8uJ6CHOw&s"
+      alt="Asian Institute of Technology (AIT Bangkok) Logo"
+      loading="lazy"
+    />
+  </div>
+  <h3>AIT Bangkok</h3>
+  <p>Asian Institute of Technology</p>
+</div>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="trust-bar reveal">
+        <div class="trust-item">
+          <svg width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 4.9 5.4.78-3.9 3.8.92 5.38L10 14.3l-4.86 2.55.92-5.38L2.16 7.68l5.4-.78L10 2z" stroke="#2B7AFA" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Recognised Startup
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 4.9 5.4.78-3.9 3.8.92 5.38L10 14.3l-4.86 2.55.92-5.38L2.16 7.68l5.4-.78L10 2z" stroke="#2B7AFA" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Incubation Support
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 4.9 5.4.78-3.9 3.8.92 5.38L10 14.3l-4.86 2.55.92-5.38L2.16 7.68l5.4-.78L10 2z" stroke="#2B7AFA" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Academic Partnership
+        </div>
+        <div class="trust-item">
+          <svg width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 4.9 5.4.78-3.9 3.8.92 5.38L10 14.3l-4.86 2.55.92-5.38L2.16 7.68l5.4-.78L10 2z" stroke="#2B7AFA" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Research Driven
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section contact" id="contact" aria-label="Contact Us">
+    <div class="container">
+      <div class="section-tag reveal">Get In Touch</div>
+      <h2 class="section-heading text-center reveal">Contact <span class="gradient-text">Us</span></h2>
+      <p class="section-subheading text-center reveal">We'd love to hear from you. Reach out through any channel below.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info Column -->
+        <div class="contact-info reveal">
+
+          <div class="contact-info-block">
+            <h3>Our Details</h3>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><path d="M10 2C6.686 2 4 4.686 4 8c0 5.25 6 10 6 10s6-4.75 6-10c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" stroke="#2B7AFA" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Address</strong>
+                <span>Curelex HealthTech Pvt. Ltd.<br />Prayagraj, Uttar Pradesh, India</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><path d="M3 4h4l2 4-2 2c.9 1.8 2.2 3.1 4 4l2-2 4 2v4c0 1.1-.9 2-2 2C7.3 20 0 12.7 0 5a2 2 0 012-2h1z" stroke="#2B7AFA" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+917880894345">+91 7880894345</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" rx="2" stroke="#2B7AFA" stroke-width="1.5"/><polyline points="2,4 10,12 18,4" stroke="#2B7AFA" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info.curelex@gmail.com">info.curelex@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="contact-social">
+            <p>Connect with us</p>
+            <div class="social-icons">
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/company/curelex-healthtech/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><rect x="2" y="2" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/><line x1="7" y1="10" x2="7" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="7.5" r="1" fill="currentColor"/><path d="M11 10v6M11 13c0-1.657 1.343-3 3-3s3 1.343 3 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://whatsapp.com/channel/0029Vb6h5rD90x2oWxVpiF1N" class="social-icon social-icon--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 13.5c-.3.8-1.5 1.5-2.3 1.5-1.2 0-2.4-.5-3.4-1.5C8.8 12.5 8.3 11.3 8.3 10.1c0-.8.7-2 1.5-2.3l.7 1.5-.5 1 .8 1.6 1-.5 1.5.7-.5.4z" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/curelexofficial?utm_source=qr&igsh=MWNobGQzMHdhdTRpNg==" class="social-icon social-icon--instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="22" height="22" fill="none" viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="11" cy="11" r="3.5" stroke="currentColor" stroke-width="1.8"/><circle cx="15.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Maps Embed -->
+          <div class="contact-map reveal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460805.2082697282!2d81.68286019780267!3d25.37844782906437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3985676c4aa1e43d%3A0xf5254be8e09b3bdc!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Curelex HealthTech Location Map">
+            </iframe>
+          </div>
+
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <h3>Send Us a Message</h3>
+
+            <div class="form-group">
+              <label for="fname">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fname" name="name" placeholder="John Doe" autocomplete="name" required />
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="femail">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="fmessage">Message <span aria-hidden="true">*</span></label>
+              <textarea id="fmessage" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block ripple" id="submitBtn">
+              <span class="btn-label">Send Message</span>
+              <span class="btn-sending" aria-hidden="true">Sending…</span>
+            </button>
+
+            <!-- Success Message -->
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" aria-hidden="true">
+              <div class="success-icon" aria-hidden="true">✅</div>
+              <strong>Message Sent!</strong>
+              <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Curelex HealthTech Home">
+            <img src="https://i.postimg.cc/4Nf0QCMv/curelex-logo.jpg" alt="Curelex HealthTech Logo" />
+          </a>
+          <p class="footer-tagline">Designed for Secure Digital Healthcare Infrastructure</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/curelex-healthtech/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="18" height="18" fill="none" viewBox="0 0 22 22"><rect x="2" y="2" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/><line x1="7" y1="10" x2="7" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="7.5" r="1" fill="currentColor"/><path d="M11 10v6M11 13c0-1.657 1.343-3 3-3s3 1.343 3 3v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+            <a href="https://whatsapp.com/channel/0029Vb6h5rD90x2oWxVpiF1N" class="social-icon social-icon--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" fill="none" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 13.5c-.3.8-1.5 1.5-2.3 1.5-1.2 0-2.4-.5-3.4-1.5C8.8 12.5 8.3 11.3 8.3 10.1c0-.8.7-2 1.5-2.3l.7 1.5-.5 1 .8 1.6 1-.5 1.5.7-.5.4z" stroke="currentColor" stroke-width="1.5"/></svg></a>
+            <a href="https://www.instagram.com/curelexofficial?utm_source=qr&igsh=MWNobGQzMHdhdTRpNg==" class="social-icon social-icon--instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" fill="none" viewBox="0 0 22 22"><rect x="3" y="3" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="11" cy="11" r="3.5" stroke="currentColor" stroke-width="1.8"/><circle cx="15.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-group">
+          <h4>Quick Links</h4>
+          <nav aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#supported-by">Supported By</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links-group">
+          <h4>Contact</h4>
+          <a href="mailto:info.curelex@gmail.com">info.curelex@gmail.com</a>
+          <a href="tel:+917880894345">+91 7880894345</a>
+          <span>Prayagraj, Uttar Pradesh</span>
+          <span>India</span>
+        </div>
+
+        <!-- Services Summary -->
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <a href="#services">Patient Record Management</a>
+          <a href="#services">Doctor Verification</a>
+          <a href="#services">Digital Prescriptions</a>
+          <a href="#services">Follow-Up Tracking</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Curelex HealthTech Pvt. Ltd. All rights reserved.</p>
+        <p class="footer-bottom-tagline">Designed for Secure Digital Healthcare Infrastructure</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" fill="none" viewBox="0 0 20 20"><path d="M10 15V5M6 9l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
