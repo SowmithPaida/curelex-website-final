@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Dashboard</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 class="logo"><a href="../index.html">CureLex</a></h2>
+            <ul>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="authorization.html">Reports</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Top Navbar -->
+            <div class="topbar">
+                <h1>Dashboard</h1>
+                <div class="admin-info">
+                    <span>Welcome, Admin</span>
+                </div>
+            </div>
+
+            <!-- Dashboard Cards -->
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Patients</h3>
+                    <p id="totalPatients">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Doctors</h3>
+                    <p id="totalDoctors">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Appointments</h3>
+                    <p id="totalAppointments">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pending Authorisations</h3>
+                    <p id="pendingAuth">0</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
