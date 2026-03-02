@@ -1,0 +1,357 @@
+/* ============================================================
+   CURELEX HEALTHTECH — dashboard.css
+   Dashboard Styling (Aligned with Homepage Design System)
+   ============================================================ */
+
+/* ── 1. CSS Custom Properties ─────────────────────────────── */
+:root {
+  /* Colours */
+  --primary:        #2B7AFA;
+  --primary-dark:   #1A5FD4;
+  --primary-light:  #EAF2FF;
+  --secondary:      #0EA5A0;
+  --secondary-light:#E8F9F7;
+  --accent:         #F97316;
+
+  --bg-white:       #FFFFFF;
+  --bg-light:       #F7F9FC;
+  --bg-dark:        #0F1724;
+  --bg-dark-2:      #1A2340;
+
+  --text-dark:      #1A202C;
+  --text-medium:    #4A5568;
+  --text-light:     #718096;
+  --text-xlight:    #A0AEC0;
+  --border:         #E2E8F0;
+  --border-light:   #F0F4F8;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2B7AFA 0%, #0EA5A0 100%);
+  --gradient-hero:    linear-gradient(135deg, #0F2B5B 0%, #1A5FD4 50%, #0EA5A0 100%);
+  --gradient-text:    linear-gradient(90deg, #2B7AFA, #0EA5A0);
+
+  /* Typography */
+  --font-main:   'Poppins', system-ui, sans-serif;
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-extrabold:800;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl:4rem;
+  --space-3xl:6rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md: 0 4px 16px rgba(43,122,250,.10), 0 2px 8px rgba(0,0,0,.06);
+  --shadow-lg: 0 8px 30px rgba(43,122,250,.15), 0 4px 12px rgba(0,0,0,.08);
+  --shadow-xl: 0 20px 60px rgba(43,122,250,.20), 0 8px 24px rgba(0,0,0,.10);
+
+  /* Borders */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+  --radius-full:9999px;
+
+  /* Transitions */
+  --ease:       cubic-bezier(.4,0,.2,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --transition: .3s var(--ease);
+}
+
+/* ── 2. Reset & Base ──────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a  { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* ── 3. Dashboard Layout ──────────────────────────────────── */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── 4. Sidebar ───────────────────────────────────────────── */
+.sidebar {
+  width: 260px;
+  background: var(--gradient-hero);
+  color: white;
+  padding: var(--space-lg);
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-md);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.sidebar .logo a {
+  color: white;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.sidebar .logo a:hover {
+  opacity: 0.85;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.sidebar ul li {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sidebar ul li a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: var(--fw-medium);
+  font-size: 0.95rem;
+  display: block;
+  transition: var(--transition);
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar ul li:hover a {
+  color: white;
+}
+
+.sidebar ul li.active {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li.active a {
+  color: white;
+  font-weight: var(--fw-bold);
+}
+
+/* Scrollbar styling for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ── 5. Main Content ──────────────────────────────────────── */
+.main-content {
+  flex: 1;
+  margin-left: 260px;
+  padding: var(--space-2xl);
+  background: var(--bg-light);
+  min-height: 100vh;
+}
+
+/* ── 6. Topbar ────────────────────────────────────────────── */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--text-dark);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.admin-info span {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  font-weight: var(--fw-medium);
+}
+
+/* ── 7. Cards Grid ────────────────────────────────────────── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.card {
+  background: var(--bg-white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  font-weight: var(--fw-semibold);
+  color: var(--text-medium);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card p {
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ── 8. Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    padding: var(--space-md);
+  }
+
+  .main-content {
+    margin-left: 220px;
+    padding: var(--space-lg);
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .topbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .card {
+    padding: var(--space-lg);
+  }
+
+  .card p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    width: 180px;
+    padding: var(--space-sm);
+  }
+
+  .main-content {
+    margin-left: 180px;
+    padding: var(--space-md);
+  }
+
+  .sidebar .logo {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar ul li {
+    padding: var(--space-sm);
+  }
+
+  .sidebar ul li a {
+    font-size: 0.85rem;
+  }
+
+  .topbar h1 {
+    font-size: 1.25rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card p {
+    font-size: 1.8rem;
+  }
+}
