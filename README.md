@@ -85,6 +85,7 @@ No additional installation is required.
 ---
 
  👨‍💻 Contributors
+ 
 Sowmith: Developed the homepage.
 
 Yashraj: Worked on the dashboard page. 
