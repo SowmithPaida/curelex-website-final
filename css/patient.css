@@ -1,0 +1,81 @@
+/* ============================================================
+   CURELEX Patient Styles — patient.css
+   Tailored colour palette for patient-facing pages
+   ============================================================ */
+
+:root {
+    --primary:        #0F4C81;
+    --accent:         #00B4D8;
+    --bg:             #F8FAFC;
+    --text:           #1E293B;
+
+    /* Extended palette */
+    --primary-dark:   #0a3560;
+    --accent-light:   #e0f7fc;
+    --accent-dark:    #0090b0;
+    --white:          #ffffff;
+    --gray-100:       #f1f5f9;
+    --gray-200:       #e2e8f0;
+    --gray-400:       #94a3b8;
+    --gray-500:       #64748b;
+}
+
+/* basic reset and typography */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* forms */
+form {
+    max-width: 420px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: .65rem .8rem;
+    margin-top: .3rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: .85rem;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+}
